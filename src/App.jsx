@@ -5,7 +5,20 @@ import { useState } from 'react'
 // import './App.css'
 import { motion } from "framer-motion";
 
+
 export default function PortfolioWebsite() {
+
+  const personalInfo = {
+    name: "Ippty Khan",
+    title: "UI/UX Designer",
+    image: "",
+    resume: "/resume.pdf",
+    email: "ipptykhancse@gmail.com",
+    linkedin: "https://www.linkedin.com/in/ippty-khan-07aa8424a/",
+    behance: "https://www.behance.net/ipptykhancse",
+    dribbble: "https://dribbble.com/ipptykhancse",
+    github: "https://github.com/ipptykhan1",
+      };
   const projects = [
     {
       title: "Smart Finance Dashboard",
@@ -22,11 +35,11 @@ export default function PortfolioWebsite() {
       tools: ["Figma", "Wireframing", "Prototype"],
     },
     {
-      title: "Portfolio Landing Page",
-      category: "Frontend Development",
+      title: "Krishi Card",
+      category: "UI/UX Case Study",
       description:
-        "Responsive portfolio website built using ReactJS and Tailwind CSS with smooth animations.",
-      tools: ["ReactJS", "Tailwind CSS", "Framer Motion"],
+        "A Krishi Card (Farmer Card) UI design should focus on clarity, accessibility, and utility for farmers, prioritizing quick access to information.",
+      tools: ["Figma", "User Research", "Design System"],
     },
   ];
 
@@ -49,20 +62,20 @@ export default function PortfolioWebsite() {
       <header className="sticky top-0 z-50 backdrop-blur-lg border-b border-white/10 bg-black/60">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <h1 className="text-2xl font-bold tracking-wide">
-            Ippty<span className="text-gray-400">Khan</span>
+            Ippty<span className="text-green-400">Khan</span>
           </h1>
 
-          <nav className="hidden md:flex gap-8 text-sm text-gray-300">
-            <a href="#about" className="hover:text-white transition">
+          <nav className="hidden md:flex gap-8 text-md font-md text-gray-300">
+            <a href="#about" className="hover:text-green-300 transition">
               About
             </a>
-            <a href="#projects" className="hover:text-white transition">
+            <a href="#projects" className="hover:text-green-300 transition">
               Projects
             </a>
-            <a href="#skills" className="hover:text-white transition">
+            <a href="#skills" className="hover:text-green-300 transition">
               Skills
             </a>
-            <a href="#contact" className="hover:text-white transition">
+            <a href="#contact" className="hover:text-green-300 transition">
               Contact
             </a>
           </nav>
@@ -81,8 +94,8 @@ export default function PortfolioWebsite() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
           >
-            <p className="text-gray-400 text-sm uppercase tracking-[4px] mb-4">
-            UI/UX Designer & Frontend Developer
+            <p className="text-gray-300 text-md font-md uppercase tracking-[4px] mb-4">
+            UI/UX Designer
           </p>
 
           <h2 className="text-5xl md:text-7xl font-bold leading-tight mb-6">
@@ -97,11 +110,13 @@ export default function PortfolioWebsite() {
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <button className="px-7 py-3 rounded-2xl bg-white text-black font-semibold hover:scale-105 transition">
+            <button className="px-7 py-3 rounded-2xl bg-green-400 text-white font-semibold hover:scale-105 transition">
               View Projects
             </button>
 
-            <button className="px-7 py-3 rounded-2xl border border-white/20 hover:bg-white/10 transition">
+          
+
+            <button className="px-7 py-3 rounded-2xl border border-green-400 hover:bg-white/10 transition">
               Download Resume
             </button>
           </div>
@@ -118,7 +133,7 @@ export default function PortfolioWebsite() {
 
             <div className="text-center z-10 px-8">
               <div className="w-28 h-28 rounded-full bg-white/10 mx-auto mb-6 border border-white/10 flex items-center justify-center text-3xl font-bold">
-                IK
+                <img src='' />
               </div>
 
               <h3 className="text-2xl font-semibold mb-2">Ippty Khan</h3>
